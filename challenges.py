@@ -40,7 +40,7 @@ def resultView():
         print(ingredient)
     #Step 2 : Create paramaters JSON with the ingredient received in step 1 in the form required by http://www.recipepuppy.com/about/api/
         params = {'i': ingredient}
-        baseurl = "http://www.recipepuppy.com/about/api/"
+        baseurl = "http://www.recipepuppy.com/api/"
     #Step 3 : Make an API request to Recipe API and parameters in Step 2
         response = requests.get(baseurl, params= params)
     #Step 4 : Parse the response from API request in JSON
